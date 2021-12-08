@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="XqM-bU-pUF">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="VVd-W5-Qy6">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
@@ -36,7 +36,92 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xOR-dp-60D" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="958" y="276"/>
+            <point key="canvasLocation" x="986" y="163"/>
+        </scene>
+        <!--Stack View Controller-->
+        <scene sceneID="rv4-6t-t06">
+            <objects>
+                <viewController id="pyH-fC-1vS" customClass="StackViewController" customModule="AutolayoutCode" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="OFq-ll-T4z">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="pQl-F3-wLx"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9BB-ro-A24" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-138" y="933"/>
+        </scene>
+        <!--Dynamic View Controller-->
+        <scene sceneID="0ZJ-JH-BZQ">
+            <objects>
+                <viewController id="VVd-W5-Qy6" customClass="DynamicViewController" customModule="AutolayoutCode" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="SEM-K7-oKD">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="cnZ-8l-X0a">
+                                <rect key="frame" x="20" y="811" width="374" height="31"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3hj-RV-Dbe">
+                                        <rect key="frame" x="0.0" y="0.0" width="179" height="31"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                        <connections>
+                                            <action selector="addView" destination="VVd-W5-Qy6" eventType="touchUpInside" id="Oow-Wx-9G8"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xyZ-Eg-2ZQ">
+                                        <rect key="frame" x="195" y="0.0" width="179" height="31"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                        <connections>
+                                            <action selector="removeView" destination="VVd-W5-Qy6" eventType="touchUpInside" id="QKb-5S-5Sy"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qLN-ra-Emp">
+                                <rect key="frame" x="0.0" y="44" width="414" height="767"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="ikk-AN-eHT">
+                                        <rect key="frame" x="0.0" y="0.0" width="382" height="767"/>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="ikk-AN-eHT" secondAttribute="bottom" id="Cfc-tf-BzB"/>
+                                    <constraint firstAttribute="trailing" secondItem="ikk-AN-eHT" secondAttribute="trailing" id="GpC-8H-vRt"/>
+                                    <constraint firstItem="ikk-AN-eHT" firstAttribute="top" secondItem="qLN-ra-Emp" secondAttribute="top" id="KFd-Jh-bh6"/>
+                                    <constraint firstItem="ikk-AN-eHT" firstAttribute="width" secondItem="qLN-ra-Emp" secondAttribute="width" multiplier="0.922705" id="PCI-Cs-ZFI"/>
+                                    <constraint firstItem="ikk-AN-eHT" firstAttribute="leading" secondItem="qLN-ra-Emp" secondAttribute="leading" id="Tpc-zR-f2H"/>
+                                    <constraint firstItem="ikk-AN-eHT" firstAttribute="height" secondItem="kdy-b6-iPL" secondAttribute="height" priority="250" id="oew-FO-iQV"/>
+                                </constraints>
+                                <viewLayoutGuide key="contentLayoutGuide" id="jt5-fw-wQt"/>
+                                <viewLayoutGuide key="frameLayoutGuide" id="kdy-b6-iPL"/>
+                            </scrollView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="n2J-Qc-3PH"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="n2J-Qc-3PH" firstAttribute="trailing" secondItem="qLN-ra-Emp" secondAttribute="trailing" id="G0T-zs-cQJ"/>
+                            <constraint firstItem="cnZ-8l-X0a" firstAttribute="leading" secondItem="n2J-Qc-3PH" secondAttribute="leading" constant="20" id="LWU-qm-tro"/>
+                            <constraint firstItem="cnZ-8l-X0a" firstAttribute="top" secondItem="qLN-ra-Emp" secondAttribute="bottom" id="Uqb-1J-WPu"/>
+                            <constraint firstItem="qLN-ra-Emp" firstAttribute="top" secondItem="n2J-Qc-3PH" secondAttribute="top" id="aIe-GC-hxB"/>
+                            <constraint firstItem="n2J-Qc-3PH" firstAttribute="bottom" secondItem="cnZ-8l-X0a" secondAttribute="bottom" constant="20" id="oWU-bM-5YO"/>
+                            <constraint firstItem="n2J-Qc-3PH" firstAttribute="trailing" secondItem="cnZ-8l-X0a" secondAttribute="trailing" constant="20" id="pbD-9I-IDx"/>
+                            <constraint firstItem="qLN-ra-Emp" firstAttribute="leading" secondItem="n2J-Qc-3PH" secondAttribute="leading" id="tum-iH-U0f"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="stackView" destination="ikk-AN-eHT" id="H3p-0E-VXA"/>
+                        <outletCollection property="buttons" destination="3hj-RV-Dbe" collectionClass="NSMutableArray" id="Fsk-jj-xy1"/>
+                        <outletCollection property="buttons" destination="xyZ-Eg-2ZQ" collectionClass="NSMutableArray" id="Qbm-SF-o5j"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xyB-G1-9n3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1260.8695652173915" y="1130.3571428571429"/>
         </scene>
     </scenes>
     <resources>

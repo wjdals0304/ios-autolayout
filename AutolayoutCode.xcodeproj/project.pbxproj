@@ -14,6 +14,8 @@
 		6498267E275E0AE300FA462F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6498267C275E0AE300FA462F /* LaunchScreen.storyboard */; };
 		64982686275E0B0800FA462F /* AnchorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64982685275E0B0800FA462F /* AnchorViewController.swift */; };
 		64982688275E3ECE00FA462F /* ConstraintViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64982687275E3ECE00FA462F /* ConstraintViewController.swift */; };
+		64982693275F58DB00FA462F /* StackViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64982692275F58DB00FA462F /* StackViewController.swift */; };
+		649826952760A80D00FA462F /* DynamicViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 649826942760A80D00FA462F /* DynamicViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,8 @@
 		6498267F275E0AE300FA462F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		64982685275E0B0800FA462F /* AnchorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnchorViewController.swift; sourceTree = "<group>"; };
 		64982687275E3ECE00FA462F /* ConstraintViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConstraintViewController.swift; sourceTree = "<group>"; };
+		64982692275F58DB00FA462F /* StackViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StackViewController.swift; sourceTree = "<group>"; };
+		649826942760A80D00FA462F /* DynamicViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DynamicViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +67,8 @@
 				64982677275E0AE200FA462F /* Main.storyboard */,
 				64982685275E0B0800FA462F /* AnchorViewController.swift */,
 				64982687275E3ECE00FA462F /* ConstraintViewController.swift */,
+				64982692275F58DB00FA462F /* StackViewController.swift */,
+				649826942760A80D00FA462F /* DynamicViewController.swift */,
 				6498267A275E0AE300FA462F /* Assets.xcassets */,
 				6498267C275E0AE300FA462F /* LaunchScreen.storyboard */,
 				6498267F275E0AE300FA462F /* Info.plist */,
@@ -141,8 +147,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				649826952760A80D00FA462F /* DynamicViewController.swift in Sources */,
 				64982672275E0AE200FA462F /* AppDelegate.swift in Sources */,
 				64982688275E3ECE00FA462F /* ConstraintViewController.swift in Sources */,
+				64982693275F58DB00FA462F /* StackViewController.swift in Sources */,
 				64982674275E0AE200FA462F /* SceneDelegate.swift in Sources */,
 				64982686275E0B0800FA462F /* AnchorViewController.swift in Sources */,
 			);
