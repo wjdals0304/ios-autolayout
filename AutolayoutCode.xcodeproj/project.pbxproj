@@ -16,6 +16,9 @@
 		64982688275E3ECE00FA462F /* ConstraintViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64982687275E3ECE00FA462F /* ConstraintViewController.swift */; };
 		64982693275F58DB00FA462F /* StackViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64982692275F58DB00FA462F /* StackViewController.swift */; };
 		649826952760A80D00FA462F /* DynamicViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 649826942760A80D00FA462F /* DynamicViewController.swift */; };
+		649826972761D6FF00FA462F /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 649826962761D6FF00FA462F /* LoginViewController.swift */; };
+		6498269D2761EC4C00FA462F /* SelfSizingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6498269C2761EC4C00FA462F /* SelfSizingViewController.swift */; };
+		6498269F2761EF7500FA462F /* CustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6498269E2761EF7500FA462F /* CustomTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +33,9 @@
 		64982687275E3ECE00FA462F /* ConstraintViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConstraintViewController.swift; sourceTree = "<group>"; };
 		64982692275F58DB00FA462F /* StackViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StackViewController.swift; sourceTree = "<group>"; };
 		649826942760A80D00FA462F /* DynamicViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DynamicViewController.swift; sourceTree = "<group>"; };
+		649826962761D6FF00FA462F /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		6498269C2761EC4C00FA462F /* SelfSizingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelfSizingViewController.swift; sourceTree = "<group>"; };
+		6498269E2761EF7500FA462F /* CustomTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +75,9 @@
 				64982687275E3ECE00FA462F /* ConstraintViewController.swift */,
 				64982692275F58DB00FA462F /* StackViewController.swift */,
 				649826942760A80D00FA462F /* DynamicViewController.swift */,
+				649826962761D6FF00FA462F /* LoginViewController.swift */,
+				6498269C2761EC4C00FA462F /* SelfSizingViewController.swift */,
+				6498269E2761EF7500FA462F /* CustomTableViewCell.swift */,
 				6498267A275E0AE300FA462F /* Assets.xcassets */,
 				6498267C275E0AE300FA462F /* LaunchScreen.storyboard */,
 				6498267F275E0AE300FA462F /* Info.plist */,
@@ -147,11 +156,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6498269F2761EF7500FA462F /* CustomTableViewCell.swift in Sources */,
+				649826972761D6FF00FA462F /* LoginViewController.swift in Sources */,
 				649826952760A80D00FA462F /* DynamicViewController.swift in Sources */,
 				64982672275E0AE200FA462F /* AppDelegate.swift in Sources */,
 				64982688275E3ECE00FA462F /* ConstraintViewController.swift in Sources */,
 				64982693275F58DB00FA462F /* StackViewController.swift in Sources */,
 				64982674275E0AE200FA462F /* SceneDelegate.swift in Sources */,
+				6498269D2761EC4C00FA462F /* SelfSizingViewController.swift in Sources */,
 				64982686275E0B0800FA462F /* AnchorViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
